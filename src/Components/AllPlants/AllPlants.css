@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+.ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.plant-card {
+    width: 250px;
+    background: #FBFBFB;
+    border: 2px solid transparent;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: border 0.3s ease;
+}
+
+.plant-card:hover {
+    border-top: 2px solid #46A358;
+}
+
+.plant-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.plant-name {
+    font-size: 18px;
+    margin: 15px 0 5px;
+    color: #333;
+}
+
+.plant-price {
+    font-size: 16px;
+    color: #4caf50;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.plant-card:hover .icons {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.icon-btn {
+    background: #ddd;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.icon-btn:hover {
+    background: #4caf50;
+    color: white;
+}
+
+.fa {
+    font-size: 16px;
+}

@@ -1,0 +1,117 @@
+.categories {
+  background-color: #FBFBFB;
+  padding: 20px;
+  width: 100%;
+  max-width: 250px; /* Ensure it doesn't get too wide on larger screens */
+  font-family: Arial, sans-serif;
+  text-align: start;
+}
+
+.categories h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.categories ul li {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.categories p {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.categories p span {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #46A358;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.categories ul li:hover {
+  color: #46A358;
+}
+
+.categories input[type="range"] {
+  width: 100%;
+  margin: 10px 0 20px 0;
+  cursor: pointer;
+}
+
+.categories input[type="range"]::-webkit-slider-thumb {
+  background-color: #46A358;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.add-img {
+  background-image: url(../../../public/21.png);
+  width: 100%;
+  max-width: 310px; /* Ensure it doesn't get too wide */
+}
+
+@media screen and (max-width: 768px) {
+  .categories {
+    padding: 15px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .categories h3 {
+    font-size: 20px;
+  }
+
+  .categories ul li {
+    font-size: 16px;
+  }
+
+  .categories p {
+    font-size: 18px;
+  }
+
+  .categories input[type="range"] {
+    margin: 10px 0 15px 0;
+  }
+
+  .add-img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .categories {
+    padding: 10px;
+  }
+
+  .categories h3 {
+    font-size: 18px;
+  }
+
+  .categories ul li {
+    font-size: 14px;
+  }
+
+  .categories p {
+    font-size: 16px;
+  }
+
+  .add-img {
+    width: 100%;
+  }
+}
